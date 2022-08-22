@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form id="idForm">
+            <h1>Agregar producto a mi Stock</h1><br>
+
+            <div id="divDolar"></div>
+            <div class="mb-3">
+              <label for="idNombre" class="form-label">Instrumento: </label>
+              <input type="text" class="form-control" id="idNombre" name="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="idPrecio" class="form-label">Precio USD: </label>
+              <input type="number" class="form-control" id="idPrecio" name="precio">
+            </div>
+            <button id="botonStock" type="submit" class="btn btn-dark">Agregar al Stock</button><br><br>
+          </form>
+    </div>
+    <div class="container">
+    <button id="idBotonProducto" class="btn btn-secondary">Mostrar Stock</button><br><br>
+    </div>
+    <div id="divProductos" class="container row"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <script src="js/script.js"></script> 
+   
+</body>
+</html> 
